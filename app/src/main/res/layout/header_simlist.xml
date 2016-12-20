@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:background="#39AEC2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            tools:ignore="UselessParent">
+
+        <ImageView
+                android:id="@+id/iv_sky"
+                android:layout_width="match_parent"
+                android:src="@drawable/sky"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="120dp"/>
+
+        <ImageView
+                android:id="@+id/iv_buildings"
+                android:layout_width="match_parent"
+                android:src="@drawable/buildings"
+                android:layout_height="120dp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="3"
+                android:layout_height="120dp">
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+            <ImageView
+                    android:id="@+id/iv_sun"
+                    android:layout_width="40dp"
+
+                    android:src="@drawable/sun"
+                    android:layout_marginBottom="50dp"
+                    android:scaleType="centerInside"
+                    android:layout_height="40dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
